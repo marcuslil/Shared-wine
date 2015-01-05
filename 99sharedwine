@@ -1,0 +1,21 @@
+# This file is sourced by Xsession(5), not executed.
+
+if [ ! -z $XDG_DATA_DIRS ]; then
+        XDG_DATA_DIRS=$XDG_DATA_DIRS:
+else
+        XDG_DATA_DIRS=/usr/share:/usr/local/share:
+fi
+
+XDG_DATA_DIRS=${XDG_DATA_DIRS}/sharedwine/.local/share
+export XDG_DATA_DIRS
+
+if [ ! -z $XDG_CONFIG_DIRS ]; then
+        XDG_CONFIG_DIRS=$XDG_CONFIG_DIRS:
+else
+        XDG_CONFIG_DIRS=/etc/xdg:
+fi
+
+XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS}/sharedwine/.config
+export XDG_CONFIG_DIRS
+
+

@@ -1,0 +1,6 @@
+REGEDIT4
+
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment]
+"TEMP"="C:\\temp"
+"TMP"="C:\\temp"
